@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
+import { APP_DESCRIPTION, APP_NAME, SERVER_URL } from "@/lib/constsants";
+import { URL } from "node:url";
 
 const inter = Inter({subsets:['latin']})
 
 export const metadata: Metadata = {
-  title: "Loomence",
-  description: "Best products with affordable price",
+  title: {
+    template: `%s | Loomence`,
+    default: APP_NAME,
+  },
+  description: APP_DESCRIPTION,
+  metadataBase: new URL(SERVER_URL)
 };
 
 export default function RootLayout({
