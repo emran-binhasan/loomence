@@ -1,6 +1,6 @@
 
 const Homepage = () => {
-  return ( <>Hello World !</> );
+  return ( <></> );
 }
  
 export default Homepage;
