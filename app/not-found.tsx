@@ -9,7 +9,7 @@ const NotFoundPage = () => {
       <div className="p-6 space-y-2 shadow rounded text-center">
         <h5 className="">Not found</h5>
         <p className="text-destructive">Could not find requested page </p>
-        <Button onClick={()=>{window.location.href = '/'}}>Go Back Home</Button>
+        <Button className="cursor-pointer" onClick={()=>{window.location.href = '/'}}>Go Back Home</Button>
       </div>
     </div>
   );
