@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { APP_NAME } from "@/lib/constsants";
 import Image from "next/image";
 import Link from "next/link";
+import CredentialsSignInForm from "./credentials-signin-fom";
 
 const SignInPage = () => {
   return <div className="w-full max-w-md mx-auto">
@@ -15,7 +16,7 @@ const SignInPage = () => {
         <CardDescription className="text-center">Sign in to your account</CardDescription>
         </CardHeader>
         <CardContent>
-            {/* Form Here */}
+            <CredentialsSignInForm/>
         </CardContent>
     </Card>
   </div>;
