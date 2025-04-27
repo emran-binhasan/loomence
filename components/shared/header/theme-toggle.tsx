@@ -27,7 +27,7 @@ const ThemeToggle = () => {
       <DropdownMenuTrigger asChild>
         <Button
           variant={"ghost"}
-          className="focus-visible:ring-0 focus-visible:ri"
+          className="focus-visible:ring-0 "
         >
           {theme === "system" ? (
             <SunMoon />
