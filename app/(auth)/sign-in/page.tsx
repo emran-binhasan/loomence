@@ -3,8 +3,20 @@ import { APP_NAME } from "@/lib/constsants";
 import Image from "next/image";
 import Link from "next/link";
 import CredentialsSignInForm from "./credentials-signin-fom";
+import {redirect} from 'next/navigation'
+import { auth } from "@/auth";
+import { Metadata } from "next";
 
-const SignInPage = () => {
+export const metadata: Metadata = {
+  title: "Sign In",
+  description: "Sign in to your account",
+};
+
+const SignInPage = async () => {
+  const session = await auth();
+  if(session?.user){
+    redirect('/');
+  }
   return <div className="w-full max-w-md mx-auto">
     <Card>
         <CardHeader>
