@@ -5,8 +5,9 @@ import Link from "next/link";
 import CredentialsSignUpForm from "./credentials-signup-form";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
+import { Metadata } from "next";
 
-export const Metadata = {
+export const metadata: Metadata = {
     title:"Sign Up",
     description:"Create an account"
 }
