@@ -1,7 +1,7 @@
-# 🚧 Project Status: 10% Complete
+# 🚧 Project Status: 15% Complete
 
 📊 **Progress**  
-▮□□□□□□□□□ 10%
+▮□□□□□□□□□ 15%
 
 Modern full-stack web app powered by:
 
